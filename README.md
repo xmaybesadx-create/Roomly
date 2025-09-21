@@ -13,32 +13,34 @@ git clone <посилання>
 cd frontend
 npm install
 npm run dev
-2.  Запуск бекенду
+3.  Запуск бекенду
 cd backend
 pip install -r requirements.txt
 uvicorn main:app –reload
-3.  Налаштування БД
+4.  Налаштування БД
 •  Створіть .env файл у backend/
 •  Вкажіть змінні оточення:
 DATABASE_URL=postgresql://user:password@localhost:5432/dbname
 JWT_SECRET=ваш_секрет
 alembic upgrade head
 
-#Технології
+#### Технології
 •  Frontend: React, Vite, TailwindCSS, Axios
 •  Backend: Python, FastAPI, Postman
 •  Database: PostgreSQL
 •  CI/CD: GitHub Actions, Vercel (Frontend), Railway (Backend)
-#Структура репозиторію
+
+##### Структура репозиторію
 •  /frontend — код React застосунку
 •  /backend — бекенд на FastAPI
 •  /docs — документація, макети
 •  /tests — автотести (frontend + backend)
-#Автори
-•  Людина 1 — UI/UX та React компоненти
-•  Людина 2 — Інтеграція фронтенду з API
-•  Людина 3 — Авторизація, JWT
-•  Людина 4 — База даних, рецепти
-•  Людина 5 — Food Log, підрахунок калорій
-•  Людина 6 — Аналітика, статистика
-•  Людина 7 — DevOps, тестування, деплой
+
+###### Автори
+•  Стольнікова Альона — React компоненти
+•  Синицина Оксана — Інтеграція фронтенду з API
+•  Любаневич Анастасія (?) — Авторизація, JWT, База даних
+•  Глушко Марія (?) — База даних, рецепти
+•  Мельничук Анастасія — Food Log, підрахунок калорій
+•  Петрівська Зореслава — UI/UX, дизайн, Product owner
+•  Лагодна Марія — Project manager, тестування, деплой
