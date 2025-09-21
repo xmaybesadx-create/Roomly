@@ -6,7 +6,7 @@
 
 ## Інсталяція та запуск
 
-### 1. Клонування репозиторію
+### Клонування репозиторію
 bash
 git clone <посилання>
 1.  Запуск фронтенду
@@ -18,26 +18,26 @@ cd backend
 pip install -r requirements.txt
 uvicorn main:app –reload
 4.  Налаштування БД
-•  Створіть .env файл у backend/
-•  Вкажіть змінні оточення:
+1.  Створіть .env файл у backend/
+2.  Вкажіть змінні оточення:
 DATABASE_URL=postgresql://user:password@localhost:5432/dbname
 JWT_SECRET=ваш_секрет
 alembic upgrade head
 
 #### Технології
-•  Frontend: React, Vite, TailwindCSS, Axios
-•  Backend: Python, FastAPI, Postman
-•  Database: PostgreSQL
-•  CI/CD: GitHub Actions, Vercel (Frontend), Railway (Backend)
+1.  Frontend: React, TailwindCSS
+2.  Backend: Python, FastAPI, Postman
+3.  Database: PostgreSQL
+4.  CI/CD: GitHub Actions
 
-##### Структура репозиторію
-•  /frontend — код React застосунку
-•  /backend — бекенд на FastAPI
-•  /docs — документація, макети
-•  /tests — автотести (frontend + backend)
+#### Структура репозиторію
+1.  /frontend — код React застосунку
+2.  /backend — бекенд на FastAPI
+3.  /docs — документація, макети
+4.  /tests — автотести (frontend + backend)
 
-###### Автори
-1. Стольнікова Альона — React компоненти
+### Автори
+1.  Стольнікова Альона — React компоненти
 2.  Синицина Оксана — Інтеграція фронтенду з API
 3.  Любаневич Анастасія (?) — Авторизація, JWT, База даних
 4.  Глушко Марія (?) — База даних, рецепти
